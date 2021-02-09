@@ -11,9 +11,9 @@ class CarsController extends Controller
 
     // select all Cars
     $cars = Cars::all();
-    dd($cars);
+    // dd($cars);
 
 
-    return view('home');
+    return view('home', compact('cars'));
   }
 }
